@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: my-cluster-kafka-bootstrap-jarranzz.172.17.90.212.nip.io:443
+    bootstrap-servers: 172.30.63.160:9092
 
 app:
   topic:
