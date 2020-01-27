@@ -20,6 +20,7 @@ public class Sender {
 
     public void send(String message){
         LOG.info("sending message='{}' to topic='{}'", message, topic);
+        System.out.println("sending : "  + topic + ", mensaje : " + message);
         kafkaTemplate.send(topic, message);
     }
 }
