@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: 172.30.63.160:9092
+    bootstrap-servers: my-cluster-kafka-bootstrap.jarranzz.svc:9092
 
 app:
   topic:
