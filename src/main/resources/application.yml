@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    bootstrap-servers: my-cluster-kafka-bootstrap-jarranzz.172.17.90.212.nip.io:443
+
+app:
+  topic:
+    foo: my-topic
+
+logging:
+  level:
+    root: WARN
+    org.springframework.web: INFO
+    com.memorynotfound: DEBUG
