@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: my-cluster-kafka-bootstrap.jarranzz.svc:9092
+    bootstrap-servers: ${app.kafka.host}:${app.kafka.port}
 
 app:
   topic:

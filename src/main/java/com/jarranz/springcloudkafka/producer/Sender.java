@@ -17,10 +17,17 @@ public class Sender {
 
     @Value("${app.topic.foo}")
     private String topic;
+    
+    @Value("${spring.kafka.bootstrap-servers}")
+    private String bootstrapServers;
 
     public void send(String message){
+    	
+    	System.out.println("${spring.kafka.bootstrap-servers} : "  + bootstrapServers);
+    	
         LOG.info("sending message='{}' to topic='{}'", message, topic);
         System.out.println("sending : "  + topic + ", mensaje : " + message);
+                       
         kafkaTemplate.send(topic, message);
         for (int i = 0; i < 10; i++) {						
 			kafkaTemplate.send(topic, "Comunication Open -------- ");
